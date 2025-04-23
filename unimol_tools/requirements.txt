@@ -1,0 +1,17 @@
+pandas
+rdkit
+pymatgen
+addict
+tqdm
+yacs
+transformers
+wandb
+iopath
+lmdb
+ml_collections
+numpy
+scipy
+tensorboardX
+tqdm
+tokenizers
+git+https://mirror.ghproxy.com/https://github.com/dptech-corp/Uni-Core.git
