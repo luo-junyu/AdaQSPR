@@ -16,6 +16,7 @@ AdaQSPR is a transfer learning-based 3D molecular representation learning framew
 │   ├── data/                   # Data processing
 │   ├── train.py                # Training script
 │   ├── predict.py              # Prediction script
+├── unimol_tools_domain_specific/  # Domain-specific adaptation code directory
 ├── data/                       # Dataset directory
 │   ├── results-candidate/      # Results of prediction of candidate materials data
 │   ├── train/                  # Training data
@@ -65,7 +66,10 @@ The research team used the AdaQSPR model to screen 216 different dynamic disulfi
 We open-source the weights of the AdaQSPR model for reproducibility.
 
 Link: https://disk.pku.edu.cn/link/AA547E8FBF09114E7981DA845D7DAD5CCB
+
 Expire time: 2035-08-01 15:53
+
+Please download the weights of Uni-Mol from the origin Repo [Uni-Mol](https://github.com/deepmodeling/Uni-Mol). 
 
 ## Usage/Installation
 
@@ -80,13 +84,19 @@ cd unimol_tools
 ```
 Then, please follow the instructions in the [UniMol-Tools README](unimol_tools/README.md) to install the UniMol-Tools.
 
-- **Step3(Optional): Train the AdaQSPR model**
+- **Step3(Optional): Domain-specific Training**
+```
+cd unimol_tools_domain_specific
+python train.py
+```
+
+- **Step4(Optional): Train the AdaQSPR model**
 ```
 cd Tg # Take Tg as an example
 python trainpoly.py
 ```
 
-- **Step4(Optional): Predict the comprehensive properties of epoxy resins**
+- **Step5: Predict the comprehensive properties of epoxy resins**
 ```
 cd Tg # Take Tg as an example
 python pred_poly.py
@@ -98,5 +108,7 @@ We would like to thank the following projects for their contributions to this wo
 - [Uni-Mol](https://github.com/deepmodeling/Uni-Mol)
 
 
+## Contact
 
+If you have any questions, please contact us at: cheng-handsome at stu.xjtu.edu.cn
 
