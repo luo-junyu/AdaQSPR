@@ -1,0 +1,36 @@
+# Supplementary Expr
+
+This folder contains the supplementary experiments for the paper.
+
+## Predicting stress relaxation characteristic time (t*)
+
+./stress-relaxation
+
+Please run the codes under the ./stress-relaxation/code/ to reproduce the results.
+
+And modify `unimol_tools/unimol_tools/config/model_config.py` with:
+
+```python
+MODEL_CONFIG = {
+    "weight":{
+        "protein": "poc_pre_220816.pt",
+        "molecule_no_h": "mol_pre_no_h_220816.pt",
+        "molecule_all_h": "pretrain_Tg_0.pth", # Change Here
+        "crystal": "mp_all_h_230313.pt",
+        "mof": "mof_pre_no_h_CORE_MAP_20230505.pt",
+        "oled": "oled_pre_no_h_230101.pt",
+    },
+    "dict":{
+        "protein": "poc.dict.txt",
+        "molecule_no_h": "mol.dict.txt",
+        "molecule_all_h": "mol.dict.txt",
+        "crystal": "mp.dict.txt",
+        "mof": "mof.dict.txt",
+        "oled": "oled.dict.txt",
+    },
+}
+```
+
+## Dynamic imine epoxy resin
+
+`prediction_imine` is the prediction result of the dynamic imine epoxy resin.

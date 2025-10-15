@@ -17,13 +17,15 @@ AdaQSPR is a transfer learning-based 3D molecular representation learning framew
 │   ├── train.py                # Training script
 │   ├── predict.py              # Prediction script
 ├── data/                       # Dataset directory
+│   ├── results-candidate/      # Results of prediction of candidate materials data
 │   ├── train/                  # Training data
 │   │   ├── Tg.xlsx             # Glass transition temperature data
 │   │   ├── Td.xlsx             # Thermal decomposition temperature data
 │   │   ├── TS.xlsx             # Tensile strength data
 │   │   ├── epsilon.xlsx        # Relative permittivity data
 │   │   ├── tan_delta.xlsx      # Dielectric loss data
-│   │   └── Eb.xlsx             # Electrical breakdown strength data
+│   │   ├── Eb.xlsx             # Electrical breakdown strength data
+│   │   └── organic_molecular_structure-property_dataset.xlsx # Organic molecular structure-property dataset
 │   └── candidate/              # Candidate materials data
 ├── Tg/                         # Tg prediction related files
 ├── Td/                         # Td prediction related files
@@ -57,6 +59,13 @@ The research team used the AdaQSPR model to screen 216 different dynamic disulfi
 - Electrical breakdown strength Eb > 34.8 kV/mm
 - Four of the materials have tensile strength TS ≥ 60 MPa
 - Good repairability and degradability
+
+## Weights 
+
+We open-source the weights of the AdaQSPR model for reproducibility.
+
+Link: https://disk.pku.edu.cn/link/AA547E8FBF09114E7981DA845D7DAD5CCB
+Expire time: 2035-08-01 15:53
 
 ## Usage/Installation
 
