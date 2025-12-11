@@ -1,5 +1,7 @@
 # AdaQSPR: A prediction model for epoxy resin comprehensive properties
 
+This project contains the code for *Development of Disulfide Epoxy Vitrimers via Transfer Learning: Bridging the Gap between Excellent Comprehensive Properties and Dynamic Cross-Linking Networks* published in Macromolecules 2025. [Paper](https://pubs.acs.org/doi/10.1021/acs.macromol.5c02077)
+
 ## Project Introduction
 
 AdaQSPR is a transfer learning-based 3D molecular representation learning framework for predicting the comprehensive properties of epoxy resins. This framework can efficiently predict key performance indicators such as glass transition temperature (Tg), initial thermal decomposition temperature (Td5%), tensile strength (TS), relative permittivity (ε), dielectric loss (tanδ), and electrical breakdown strength (Eb).
@@ -111,4 +113,18 @@ We would like to thank the following projects for their contributions to this wo
 ## Contact
 
 If you have any questions, please contact us at: cheng-handsome at stu.xjtu.edu.cn
+
+## Citation
+
+If our work has been helpful to you, please consider citing it. 
+
+```bibtex
+@article{zhang2025development,
+  title={Development of Disulfide Epoxy Vitrimers via Transfer Learning: Bridging the Gap between Excellent Comprehensive Properties and Dynamic Cross-Linking Networks},
+  author={Zhang, Yucheng and Luo, Junyu and Li, Hao and Li, Wenrui and Li, Wendong and Zhang, Ming and Zhang, Guan-Jun},
+  journal={Macromolecules},
+  year={2025},
+  publisher={ACS Publications}
+}
+```
 
